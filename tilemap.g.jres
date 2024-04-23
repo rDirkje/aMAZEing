@@ -1,0 +1,91 @@
+{
+    "transparency16": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "level4": {
+        "id": "level4",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxMDAwMTAwMDA1MDgwODBjMGUwYjAzMDEwNTBjMDgwZTBiMGMwYzBiMDYwYTA5MDkwOTBhMDcwMTA0MDkwOTA5MDkwOTBhMGMwNjBiMDEwMTAxMDYwNzAxMDEwMTAxMDEwMTAxMDYwNzA2MGUwYzAzMDEwNjA3MDEwNTBiMGUwODAzMDEwNjA3MDYwYTA5MDIwMTA0MGQwMTA2MGEwOTA5MDIwMTA2MDcwNjA3MDEwMTAxMDEwMTAxMDYwNzAxMDEwMTAxMDYwNzA2MGEwODA4MDMwMTA1MDgwYjA3MDEwYzA4MDgwYTA3MDYwYTA5MGEwNzAxMDYwZTBhMDcwMTA2MGEwOTBhMDcwNjA3MDEwNjBhMGIwYTBjMGEwNzAxMGUwNzAxMDYwNzA2MDcwMTA0MDkwOTBlMDkwYTA3MDEwYjAyMDEwNjA3MDYwNzAxMDEwMTAxMDEwMTA2MDcwMTAxMDEwMTA2MDcwNjA3MDEwYjAxMGIwMzAxMDYwYTA4MDgwODA4MGEwNzA2MDcwMTBjMDEwNjA3MDEwNjBhMDkwOTA5MDkwOTAyMGUwNzAxMDEwMTA2MDcwMTA2MDcwMTAxMDEwMTAxMDEwYjBhMDgwODA4MGEwYjAxMDYwYTA4MGUwYjA4MDgwZjA0MDkwOTA5MDkwZTBjMDEwNDA5MDkwOTA5MDkwYzBlMDAwMDAwMjAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDIyMDIyMDIyMjIyMjAwMDAwMDAyMjAwMDAwMjAwMDAwMDAwMjIwMDAwMDIwMDAwMDIyMjIyMjAwMjIyMjAwMDAwMDIwMDAwMDAyMDAwMDAwMDAyMDAwMDAwMjAwMDAwMDAyMDAwMDAwMDIyMDAwMDAwMjAwMDAwMDAyMjAwMDAwMjIyMjIyMDAyMjIyMDAwMDAyMDIyMDAwMDAwMDAwMDAwMjAyMjAwMDAwMDAwMDAwMjIwMjIwMDAyMjIyMjIwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMjAwMDAwMDAwMA==",
+        "tileset": [
+            "myTiles.transparency16",
+            "sprites.builtin.brick",
+            "sprites.castle.tilePath9",
+            "sprites.castle.tilePath3",
+            "sprites.castle.tilePath7",
+            "sprites.castle.tilePath1",
+            "sprites.castle.tilePath4",
+            "sprites.castle.tilePath6",
+            "sprites.castle.tilePath2",
+            "sprites.castle.tilePath8",
+            "sprites.castle.tilePath5",
+            "sprites.castle.tileGrass2",
+            "sprites.castle.tileGrass1",
+            "sprites.dungeon.chestClosed",
+            "sprites.castle.tileGrass3",
+            "sprites.dungeon.stairLadder"
+        ],
+        "displayName": "level4"
+    },
+    "level2": {
+        "id": "level2",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxMDAwMTAwMDAzMDIwYTAyMDIwMjAyMDIwMjAyMDIwMjAxMDIwMjAyMDIwMjA2MDMwMjAxMDIwMzAyMDIwMjAyMGQwYzBjMGIwMTAyMDcwMjAyMDcwNzA5MGEwMTAzMDcwOTA5MDYwYTAyMDMwOTA1MDEwYTA4MDIwYTAyMDIwMjAyMDkwNDAxMDIwMjBhMGQwYjBhMDIwMjA5MGQwYjAyMDIwOTAzMDEwMjAyMGEwOTA3MDYwMjAyMDkwOTA3MDIwMzA3MDEwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAxMGEwMjAyMDIwMTAyMDIwMjAyMDEwMjAyMDIwMjAyMDIwNjAyMDIwMjAyMDIwMTA3MDcwNjA5MDcwNzA2MDkwYTBhMDIwMjBkMGMwYzBiMDkwMjAyMDIwMjAyMDIwMTAxMDMwMjAyMGEwNjA3MGEwYTAyMDEwMjAyMDIwMzAzMDIwMjAyMDIwMTAyMDMwMzAyMDIwMjA3MDkwNjBhMDcwOTA5MDcwYTAyMDIwMjAxMGQwYzBjMDkwMjAyMDkwMjAyMDYwMjA1MDIwMjA3MDcwYTA5MDYwOTAyMDIwNzAyMDIwNzAyMDEwMjAyMDIwMzAyMDIwMTAyMDIwMjAyMDEwMjAyMDIwMjBjMGMwYjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwZDBjMDAwMjAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAyMjAyMjAyMjAyMjIyMDAwMjIwMDAwMjAwMjAwMDAwMDIyMDAwMDIwMDIwMDAwMDIyMjIwMDIyMDIyMDAwMDAwMDAwMDAwMDAwMjAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMjIyMjIyMjIyMjAwMDAwMDAyMDAwMDAwMDAwMDIyMjIwMjAwMDAwMDAwMDAwMDAwMDAyMDIyMjIyMjIyMDAwMDAwMjAwMDAyMjAwMDAwMjIyMjIyMDAwMjIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==",
+        "tileset": [
+            "myTiles.transparency16",
+            "sprites.castle.tileDarkGrass2",
+            "sprites.castle.tileDarkGrass1",
+            "sprites.castle.tileDarkGrass3",
+            "sprites.dungeon.chestClosed",
+            "sprites.dungeon.collectibleInsignia",
+            "sprites.dungeon.floorLight1",
+            "sprites.dungeon.floorLightMoss",
+            "sprites.dungeon.stairLadder",
+            "sprites.dungeon.floorLight4",
+            "sprites.dungeon.floorLight0",
+            "sprites.builtin.forestTiles3",
+            "sprites.builtin.forestTiles2",
+            "sprites.builtin.forestTiles1"
+        ],
+        "displayName": "level2"
+    },
+    "level1": {
+        "id": "level1",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxMDAwMTAwMDAzMDUwNTA1MDUwNTA0MTMwMzA1MDUwNTA1MDUwNTA0MDIwNjA2MDYwNjBhMDgxMzA3MGQwNjA2MDYwNjBhMDgwZTE0MGYwZTEwMDcwODEzMDcwODBlMTQxNDEwMDcwODBmMTIxMDEzMTEwNzA4MTMwNzA4MTMwMzA0MTMwNzA4MTAxMjEyMTMxNTA3MDgxMzE3MDExMzA3MDgxMDA3MDgxMzEyMTIwZjExMDcwODBmMTExNDExMDcwODExMDcwODBmMTAwZjE2MDUwYjBjMDUwNDExMDMwYjA4MTMwNzA4MDMwNDEzMDIwNjA2MDYwNjAxMTMwNzBkMDExMzA3MDgwNzA4MGYxMjEwMGYxMTE0MTIxMTA3MDgwZTExMDcwODA3MGMwNTA1MDUwNTA1MDUwNTA1MGIwODEzMDMwYjA4MDcwZDA2MDYwNjA2MDYwNjA2MDYwYTA4MTMwNzA5MDgwNzA4MGUxNDE0MGUxNDE0MTQxMDA3MDgxMzE2MGEwODA3MDgxMzEyMTExMzE1MTgwNDEzMDIwMTEzMTAwNzA4MDcwODBmMTEwZTEyMTEwNzA4MGYxMTBlMTIxMTA3MDgwNzBjMDUwNTA1MDUwNTBiMGMwNTA1MDUwNTA1MGIwODAyMDYwNjA2MDYwNjA2MDYwNjA2MDYwNjA2MDYwNjAxMDAwMDAwMjAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAyMjIyMDIyMDAwMjIyMjAwMDAwMDAyMjAwMDAyMjAwMDAwMDAwMjIwMDAwMjIwMDAwMDIyMDIyMDIyMDIyMDAwMjIwMjAwMDAyMDAwMjAwMDAwMDIwMDAwMjAwMDIwMDAwMDIyMjIyMjIyMDAyMjAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAyMDAwMDIyMjIyMjIyMDAwMjAwMDAwMjAwMDIyMDAwMjIwMDAwMjIyMjAyMjAyMjIyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==",
+        "tileset": [
+            "myTiles.transparency16",
+            "sprites.dungeon.darkGroundSouthEast0",
+            "sprites.dungeon.darkGroundSouthWest0",
+            "sprites.dungeon.darkGroundNorthWest0",
+            "sprites.dungeon.darkGroundNorthEast0",
+            "sprites.dungeon.darkGroundNorth",
+            "sprites.dungeon.darkGroundSouth",
+            "sprites.dungeon.darkGroundWest",
+            "sprites.dungeon.darkGroundEast",
+            "sprites.dungeon.darkGroundCenter",
+            "sprites.dungeon.darkGroundNorthEast1",
+            "sprites.dungeon.darkGroundSouthEast1",
+            "sprites.dungeon.darkGroundSouthWest1",
+            "sprites.dungeon.darkGroundNorthWest1",
+            "sprites.builtin.forestTiles5",
+            "sprites.builtin.forestTiles13",
+            "sprites.builtin.forestTiles7",
+            "sprites.builtin.forestTiles15",
+            "sprites.builtin.forestTiles10",
+            "sprites.builtin.forestTiles9",
+            "sprites.builtin.forestTiles6",
+            "sprites.builtin.forestTiles11",
+            "sprites.dungeon.collectibleInsignia",
+            "sprites.dungeon.chestClosed",
+            "sprites.dungeon.stairLadder"
+        ],
+        "displayName": "level"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myTiles"
+    }
+}
