@@ -4,7 +4,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
 })
 let collectible: Sprite = null
 game.splash("Welcome")
-tiles.setCurrentTilemap(tilemap`level2`)
+tiles.setCurrentTilemap(tilemap`level3`)
 info.startCountdown(60)
 info.setScore(0)
 let mySprite = sprites.create(assets.image`kitty`, SpriteKind.Player)
