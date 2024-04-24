@@ -16,7 +16,7 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sp
 scene.onOverlapTile(SpriteKind.Player, assets.tile`Teleport 1`, function (sprite, location) {
     if (justtelepored == false) {
         justtelepored = true
-        mySprite.setPosition(210, 180)
+        mySprite.setPosition(218, 188)
     }
 })
 function SetupScene () {
@@ -27,35 +27,28 @@ function SetupScene () {
     } else if (Scene == 1) {
         tiles.setCurrentTilemap(tilemap`level`)
         HasKey = false
-        justtelepored = false
         ResetTile1 = sprites.create(assets.image`ResetTile`, SpriteKind.ResetTile)
-        ResetTile1.setPosition(72, 104)
+        ResetTile1.setPosition(88, 88)
         ResetTile2 = sprites.create(assets.image`ResetTile`, SpriteKind.ResetTile)
-        ResetTile2.setPosition(80, 128)
+        ResetTile2.setPosition(104, 88)
         ResetTile3 = sprites.create(assets.image`ResetTile`, SpriteKind.ResetTile)
-        ResetTile3.setPosition(80, 112)
+        ResetTile3.setPosition(232, 200)
         ResetTile4 = sprites.create(assets.image`ResetTile`, SpriteKind.ResetTile)
-        ResetTile4.setPosition(208, 160)
+        ResetTile4.setPosition(248, 200)
         ResetTile5 = sprites.create(assets.image`ResetTile`, SpriteKind.ResetTile)
-        ResetTile5.setPosition(224, 160)
+        ResetTile5.setPosition(232, 136)
         ResetTile6 = sprites.create(assets.image`ResetTile`, SpriteKind.ResetTile)
-        ResetTile6.setPosition(224, 176)
+        ResetTile6.setPosition(248, 136)
         mySprite.setPosition(19, 18)
     } else if (Scene == 2) {
         HasKey = false
         tiles.setCurrentTilemap(tilemap`level2`)
-        ResetTile1 = sprites.create(assets.image`ResetTile`, SpriteKind.ResetTile)
-        ResetTile1.setPosition(48, 32)
-        ResetTile2 = sprites.create(assets.image`ResetTile`, SpriteKind.ResetTile)
-        ResetTile2.setPosition(64, 32)
-        ResetTile3 = sprites.create(assets.image`ResetTile`, SpriteKind.ResetTile)
-        ResetTile3.setPosition(64, 48)
-        ResetTile4 = sprites.create(assets.image`ResetTile`, SpriteKind.ResetTile)
-        ResetTile4.setPosition(224, 192)
-        ResetTile5 = sprites.create(assets.image`ResetTile`, SpriteKind.ResetTile)
-        ResetTile5.setPosition(224, 208)
-        ResetTile6 = sprites.create(assets.image`ResetTile`, SpriteKind.ResetTile)
-        ResetTile6.setPosition(240, 208)
+        ResetTile1.setPosition(216, 232)
+        ResetTile2.setPosition(216, 248)
+        ResetTile3.setPosition(88, 8)
+        ResetTile4.setPosition(88, 24)
+        sprites.destroy(ResetTile5)
+        sprites.destroy(ResetTile6)
         mySprite.setPosition(19, 18)
     } else if (Scene == 3) {
         game.splash("You won")
@@ -66,7 +59,7 @@ function SetupScene () {
 scene.onOverlapTile(SpriteKind.Player, assets.tile`Teleport 2`, function (sprite, location) {
     if (justtelepored == false) {
         justtelepored = true
-        mySprite.setPosition(50, 100)
+        mySprite.setPosition(58, 108)
     }
 })
 let ResetTile6: Sprite = null
