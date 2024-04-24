@@ -14,9 +14,13 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sp
     HasKey = true
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`Teleport 1`, function (sprite, location) {
-    if (justtelepored == false) {
+    if (justtelepored == false && Scene == 1) {
         justtelepored = true
         mySprite.setPosition(218, 188)
+    }
+    if (justtelepored == false && Scene == 2) {
+        justtelepored = true
+        mySprite.setPosition(248, 200)
     }
 })
 function SetupScene () {
@@ -57,9 +61,13 @@ function SetupScene () {
     }
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`Teleport 2`, function (sprite, location) {
-    if (justtelepored == false) {
+    if (justtelepored == false && Scene == 1) {
         justtelepored = true
         mySprite.setPosition(58, 108)
+    }
+    if (justtelepored == false && Scene == 2) {
+        justtelepored = true
+        mySprite.setPosition(56, 56)
     }
 })
 let ResetTile6: Sprite = null
