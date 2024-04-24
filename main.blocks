@@ -1,1 +1,1226 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="#pB*i[@VEK%wUWADaZkv">Player</variable><variable type="KIND_SpriteKind" id="Zguem1H53Xj{I3pA~`hq">Projectile</variable><variable type="KIND_SpriteKind" id="H)Tg=:pU@ssij~639r:h">Food</variable><variable type="KIND_SpriteKind" id="8^NQY@8X_26cciA3.,|]">Enemy</variable><variable type="KIND_SpriteKind" id="-*IQA8i4?zo.JP9Sl?f(">ResetTile</variable><variable id="o1]F}%-Jd)z!@c}D8+6,">mySprite</variable><variable id="5$4B8pD?B-CR6++yOM``">mySprite2</variable><variable id="?Pg7T_RLt4#7v.-.I(EL">collectible</variable><variable id="E2-fxrgPiZcIUARpX#Dw">otherSprite</variable><variable id="G;-a!~+%8({G$CL8{(NH">HasKey</variable><variable id="5(.CM;Md:=LF4PEO1.#_">location</variable><variable id="!(t8_KcnXXGs/4-C(Ue6">justtelepored</variable><variable id="/Ce2G(d?.F[B7BwSJ+6F">ResetTile1</variable><variable id="uvK-x{VQZZh0tv@jUH{[">Scene</variable><variable id="-fMAi]GBpfa/tU|UpWzH">ResetTile2</variable><variable id="SVmC!)+,OycwU]CZ,W#_">ResetTile3</variable><variable id="%Ldd=rX~p=BZz)OZk?AJ">ResetTile4</variable><variable id="~a:9H7XX}%mRF.M(?2u]">ResetTile5</variable><variable id="O1lZ2ollzt4`|66L!wu]">ResetTile6</variable></variables><block type="function_definition" id="iDs8N{=[*,5S7$dsEvFa" x="1169" y="-1534"><mutation name="SetupScene" functionid="])#pJ;/|MB2on.Z2auie"></mutation><field name="function_name">SetupScene</field><statement name="STACK"><block type="controls_if" id="LYB)+-yc|{z7.h/nZ)W^"><mutation elseif="3" else="1"></mutation><value name="IF0"><shadow type="logic_boolean" id="wBRliJm5A|k+bl+i1~*%"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="=aY._0.FIwn4{n3PU.Bu"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="l4X-p,9gFs^]rrp@X3y8"><field name="NUM">0</field></shadow><block type="variables_get" id=":a~Q0IK+!@ms|L@w,Z]f"><field name="VAR" id="uvK-x{VQZZh0tv@jUH{[">Scene</field></block></value><value name="B"><shadow type="math_number" id="QaN7)9YGc4RYUE{hgs_M"><field name="NUM">0</field></shadow></value></block></value><statement name="DO0"><block type="variables_set" id="QTwD,[x8.QPJj%T1Hq;`"><field name="VAR" id="G;-a!~+%8({G$CL8{(NH">HasKey</field><value name="VALUE"><shadow type="math_number" id="YvSTR#nx|uYwIH!2BK2c"><field name="NUM">0</field></shadow><block type="logic_boolean" id="^eD[OPpvK;.2mS5:`V2i"><field name="BOOL">FALSE</field></block></value><next><block type="set_current_tilemap" id="D`e-4ldFs+;WvlZ32OOY"><value name="tilemap"><shadow type="tiles_tilemap_editor" id="5lY3]+9te7,pzjkT%8AH"><field name="tilemap">tilemap`level4`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level4"}}</data></shadow></value><next><block type="spritesetpos" id="nb+lZq4+A9q^%-z0Ciz5"><value name="sprite"><block type="variables_get" id="4W$B~d|0JI]qrl%e5yH/"><field name="VAR" id="o1]F}%-Jd)z!@c}D8+6,">mySprite</field></block></value><value name="x"><shadow type="positionPicker" id="5:?Qp,J0^TAsdVq)_Vl,"><field name="index">144</field></shadow></value><value name="y"><shadow type="positionPicker" id="~fu{t]-tZim;h7RZ/N%M"><field name="index">16</field></shadow></value></block></next></block></next></block></statement><value name="IF1"><block type="logic_compare" id="qCL+!BoBJ3z8JWn~iJ#5"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="[aW?YAHRMU%$oQ+EzT?I"><field name="VAR" id="uvK-x{VQZZh0tv@jUH{[">Scene</field></block></value><value name="B"><shadow type="math_number" id="svFj5mhQ9|pXOeitN$l4"><field name="NUM">1</field></shadow></value></block></value><statement name="DO1"><block type="set_current_tilemap" id="x/uJ.)WFISV|}30th*V0"><value name="tilemap"><shadow type="tiles_tilemap_editor" id="V2pV2p~U7DoP9J7DpJS$"><field name="tilemap">tilemap`level`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level1"}}</data></shadow></value><next><block type="variables_set" id="f~dM$QM;EimdNAjEZN#x"><field name="VAR" id="G;-a!~+%8({G$CL8{(NH">HasKey</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_boolean" id="eLh/P?l)Wa0h[0x3.L5f"><field name="BOOL">FALSE</field></block></value><next><block type="variables_set" id="bQ`$o5jj;A0Pv%c-8IYw"><field name="VAR" id="/Ce2G(d?.F[B7BwSJ+6F">ResetTile1</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="jaUP=*p?;LvNF6Tcs;t#"><value name="img"><shadow type="screen_image_picker" id="$wP6?A;8:$]hbOv![(6o"><field name="img">assets.image`ResetTile`</field><data>{"commentRefs":[],"fieldData":{"img":"myImages.image3"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="6C]n,9NT1L-[TYD7Fuh$"><field name="MEMBER">ResetTile</field></shadow></value></block></value><next><block type="spritesetpos" id="Vm#(GMl#rE]GibRPL63!"><value name="sprite"><block type="variables_get" id="4}yqcULQAPY?N5I7)we%"><field name="VAR" id="/Ce2G(d?.F[B7BwSJ+6F">ResetTile1</field></block></value><value name="x"><shadow type="positionPicker" id="%H]ELd,??[1;=YX5f.wd"><field name="index">88</field></shadow></value><value name="y"><shadow type="positionPicker" id="i7j!g=u[-djct]{sH,w("><field name="index">88</field></shadow></value><next><block type="variables_set" id="^=|E@==S{1-r?`a8Q3J]"><field name="VAR" id="-fMAi]GBpfa/tU|UpWzH">ResetTile2</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="$/*[2(UEc?L3Pmzjk4({"><value name="img"><shadow type="screen_image_picker" id="j$ej_/gOXiy;pZ]n2%QO"><field name="img">assets.image`ResetTile`</field><data>{"commentRefs":[],"fieldData":{"img":"myImages.image3"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="[{S5MCguC$^O=+6Q3uLg"><field name="MEMBER">ResetTile</field></shadow></value></block></value><next><block type="spritesetpos" id="OwE=GO#J=h%p:Vix84ZU"><value name="sprite"><block type="variables_get" id="ciiz^ISiN^F!a_;AB*[/"><field name="VAR" id="-fMAi]GBpfa/tU|UpWzH">ResetTile2</field></block></value><value name="x"><shadow type="positionPicker" id="+]6%HF`P=Ks8QYDf1Dt3"><field name="index">104</field></shadow></value><value name="y"><shadow type="positionPicker" id="rhzT$6vag5S)_*(?;vG$"><field name="index">88</field></shadow></value><next><block type="variables_set" id="z_?ZO(O2AEc!@@)9dV=w"><field name="VAR" id="SVmC!)+,OycwU]CZ,W#_">ResetTile3</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="UR51Q18E:l}`-?r!gT8/"><value name="img"><shadow type="screen_image_picker" id="$:Oq^SK,/#PFtV1,U#~U"><field name="img">assets.image`ResetTile`</field><data>{"commentRefs":[],"fieldData":{"img":"myImages.image3"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="3?:=z4qXISbFJa_Pw0cU"><field name="MEMBER">ResetTile</field></shadow></value></block></value><next><block type="spritesetpos" id="^-Lg._EAJR:jtE,nxsFL"><value name="sprite"><block type="variables_get" id="+^rGqS.c,3VI^1N@RaLd"><field name="VAR" id="SVmC!)+,OycwU]CZ,W#_">ResetTile3</field></block></value><value name="x"><shadow type="positionPicker" id="Lo:^aeBJug}?/]?u^a6w"><field name="index">232</field></shadow></value><value name="y"><shadow type="positionPicker" id="@]ZZ|%KcPrVa(2aIx(jv"><field name="index">200</field></shadow></value><next><block type="variables_set" id="Z*fotqq^LI+/*}w]l=Z;"><field name="VAR" id="%Ldd=rX~p=BZz)OZk?AJ">ResetTile4</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="ITXc_2c!IEj;%i*JFXPz"><value name="img"><shadow type="screen_image_picker" id="Tb#tylPnYL{V^`Wu);LI"><field name="img">assets.image`ResetTile`</field><data>{"commentRefs":[],"fieldData":{"img":"myImages.image3"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="E91gKd^JASiAmYSJ88J+"><field name="MEMBER">ResetTile</field></shadow></value></block></value><next><block type="spritesetpos" id="YoBB?|x];mZ6ZyE},H}G"><value name="sprite"><block type="variables_get" id="y5pbyXs(NEVrCU%LmPsp"><field name="VAR" id="%Ldd=rX~p=BZz)OZk?AJ">ResetTile4</field></block></value><value name="x"><shadow type="positionPicker" id=");6Ep=rv{G/lq3`.N:e9"><field name="index">248</field></shadow></value><value name="y"><shadow type="positionPicker" id=":LTJszz$W[hwBc4;PV6m"><field name="index">200</field></shadow></value><next><block type="variables_set" id=".Cl~X*r#6i1*!![~VPN!"><field name="VAR" id="~a:9H7XX}%mRF.M(?2u]">ResetTile5</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="?EoVpfx.rj1F1(F$j4)k"><value name="img"><shadow type="screen_image_picker" id="K8i,lN+}x~x8.Xo{]w:,"><field name="img">assets.image`ResetTile`</field><data>{"commentRefs":[],"fieldData":{"img":"myImages.image3"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="H29G~^5*/]zowO?D`~wq"><field name="MEMBER">ResetTile</field></shadow></value></block></value><next><block type="spritesetpos" id="a:ZYK-YN%eLji@R^$.?h"><value name="sprite"><block type="variables_get" id="h-%!O1Nw8M~],h?7e~+c"><field name="VAR" id="~a:9H7XX}%mRF.M(?2u]">ResetTile5</field></block></value><value name="x"><shadow type="positionPicker" id="hqQ_[WcUWw!aZee(PV-?"><field name="index">232</field></shadow></value><value name="y"><shadow type="positionPicker" id="~X)}@EjzQQ)}qX!4`N^I"><field name="index">136</field></shadow></value><next><block type="variables_set" id=")|IE+,L%5)(9Hs6)w}_P"><field name="VAR" id="O1lZ2ollzt4`|66L!wu]">ResetTile6</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="RfzugQM01Ro^(9*k^$j("><value name="img"><shadow type="screen_image_picker" id="uSV$c~j^fz)K1z;3ZYn~"><field name="img">assets.image`ResetTile`</field><data>{"commentRefs":[],"fieldData":{"img":"myImages.image3"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="QeDo2IB2j44[G8y4-;6N"><field name="MEMBER">ResetTile</field></shadow></value></block></value><next><block type="spritesetpos" id="~-s6cdqAGtu?e9;j[]+@"><value name="sprite"><block type="variables_get" id="!).iyPANDxp^Z3h[z1||"><field name="VAR" id="O1lZ2ollzt4`|66L!wu]">ResetTile6</field></block></value><value name="x"><shadow type="positionPicker" id="N(rFe%wCbys-9l*pk}]1"><field name="index">248</field></shadow></value><value name="y"><shadow type="positionPicker" id="#IWRipsv`ROf}m%(8ywF"><field name="index">136</field></shadow></value><next><block type="spritesetpos" id="-,pph^q`:Wb2iU[/*VDY"><value name="sprite"><block type="variables_get" id="FN):z3f-bCMnxTX}S5w9"><field name="VAR" id="o1]F}%-Jd)z!@c}D8+6,">mySprite</field></block></value><value name="x"><shadow type="positionPicker" id="?d#Oy!fe^x({zhU~UPMF"><field name="index">19</field></shadow></value><value name="y"><shadow type="positionPicker" id="msyn}:XPR#I9~A;gO!0B"><field name="index">18</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement><value name="IF2"><block type="logic_compare" id="^=[!Y_.V1=I)H#$BJ|tc"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="BS#elk0!X60{Pz2~awc,"><field name="NUM">0</field></shadow><block type="variables_get" id="kx^T}Ap,4tA-FgMB*DmU"><field name="VAR" id="uvK-x{VQZZh0tv@jUH{[">Scene</field></block></value><value name="B"><shadow type="math_number" id=";F=at/p+ON[uxP#a1,uI"><field name="NUM">2</field></shadow></value></block></value><statement name="DO2"><block type="variables_set" id="(H!N-#M,%/lSF^QF|yT9"><field name="VAR" id="G;-a!~+%8({G$CL8{(NH">HasKey</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_boolean" id="8*^H%,/TivO0=UyMO{H}"><field name="BOOL">FALSE</field></block></value><next><block type="set_current_tilemap" id="rR2euaZ39sN6st4oXN#;"><value name="tilemap"><shadow type="tiles_tilemap_editor" id="_dnDa%/TiF~[xZ|4Ym,J"><field name="tilemap">tilemap`level2`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level2"}}</data></shadow></value><next><block type="spritesetpos" id="`p)qA|n)%*~.Ti!H(1+q"><value name="sprite"><block type="variables_get" id="oC2Z-L$SoNOe[40nkXll"><field name="VAR" id="/Ce2G(d?.F[B7BwSJ+6F">ResetTile1</field></block></value><value name="x"><shadow type="positionPicker" id="}WO:J8:7TkCOwT7V1lkQ"><field name="index">216</field></shadow></value><value name="y"><shadow type="positionPicker" id="A|ulpKniJ46gRzLGG9*T"><field name="index">232</field></shadow></value><next><block type="spritesetpos" id="]=`b^S=#hgPamQ`||88,"><value name="sprite"><block type="variables_get" id="z;KiP38!TPddbz|X;o7,"><field name="VAR" id="-fMAi]GBpfa/tU|UpWzH">ResetTile2</field></block></value><value name="x"><shadow type="positionPicker" id="g%qfW)9uJ2XZ*?7khFt)"><field name="index">216</field></shadow></value><value name="y"><shadow type="positionPicker" id="T~.wRdIs@E^)``iKi#3`"><field name="index">248</field></shadow></value><next><block type="spritesetpos" id="EQk(n`$=bzz[_G6p,kDb"><value name="sprite"><block type="variables_get" id="1x`GASM}{XmYCquO4mgT"><field name="VAR" id="SVmC!)+,OycwU]CZ,W#_">ResetTile3</field></block></value><value name="x"><shadow type="positionPicker" id="Ue:;@Tv@iT!xP5[q6BCa"><field name="index">88</field></shadow></value><value name="y"><shadow type="positionPicker" id="hqyb_ci*Mm]vMw=P;-YH"><field name="index">8</field></shadow></value><next><block type="spritesetpos" id="^tL/g*$;Ot9cd4Jah-@]"><value name="sprite"><block type="variables_get" id="Fko:j5!^L1vuq`Jab{v@"><field name="VAR" id="%Ldd=rX~p=BZz)OZk?AJ">ResetTile4</field></block></value><value name="x"><shadow type="positionPicker" id="(]$f*Vi,e5)gA`F55.D4"><field name="index">88</field></shadow></value><value name="y"><shadow type="positionPicker" id="$DV?}k(pNHdgXq)^fs{p"><field name="index">24</field></shadow></value><next><block type="spritedestroy2" id="=A(y=Ha5FE4VmTWatD}T"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><field name="effect">effects.spray</field><value name="sprite"><block type="variables_get" id="d|h0~zihyT%FokAo%qY*"><field name="VAR" id="~a:9H7XX}%mRF.M(?2u]">ResetTile5</field></block></value><value name="duration"><shadow type="timePicker" id="wYrJzp|x|7;,R_M#(kX_"><field name="ms">500</field></shadow></value><next><block type="spritedestroy2" id="=9fGzKv[E7#~9v;zO+*x"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><field name="effect">effects.spray</field><value name="sprite"><block type="variables_get" id="wJIEl,ND(Q_@`Y,3/,MN"><field name="VAR" id="O1lZ2ollzt4`|66L!wu]">ResetTile6</field></block></value><value name="duration"><shadow type="timePicker" id="n1B;)l$:3RNPj7R~6xi~"><field name="ms">500</field></shadow></value><next><block type="spritesetpos" id="TTd^t;F;Gkc)|hF%hcPL"><value name="sprite"><block type="variables_get" id="6d=XBFPiA-:7/Hslmr_?"><field name="VAR" id="o1]F}%-Jd)z!@c}D8+6,">mySprite</field></block></value><value name="x"><shadow type="positionPicker" id="??w+1_ZL4{I#|Vpugb2o"><field name="index">19</field></shadow></value><value name="y"><shadow type="positionPicker" id="+t5D3C$@;(pZb$$.O?zn"><field name="index">18</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement><value name="IF3"><block type="logic_compare" id="jJh5^Lw$*Ww,mtLtSHPl"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="+oj?[iI{gT8vf4=9YpWg"><field name="VAR" id="uvK-x{VQZZh0tv@jUH{[">Scene</field></block></value><value name="B"><shadow type="math_number" id="IRpP;5%4jp_JT4x1ViXX"><field name="NUM">3</field></shadow></value></block></value><statement name="DO3"><block type="gameSplash" id="8xv3:q_*VO.;X}Q~@lXG"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="title"><shadow type="text" id="znnjXU`*P9NhqliCF2+0"><field name="TEXT">You won</field></shadow></value><value name="subtitle"><shadow type="text" id="2,v8xCKj~osN|9d6dRn9"><field name="TEXT"></field></shadow></value></block></statement></block></statement></block><block type="pxt-on-start" id="2FoU)jsr`jC4y_DBdj_S" x="0" y="0"><statement name="HANDLER"><block type="gameSplash" id="4qtphPp!#OOjJjU%ghql"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="title"><shadow type="text" id="wRCFSS--SYkR3{=d++#o"><field name="TEXT">Your aMAZEing</field></shadow></value><value name="subtitle"><shadow type="text" id="ivxmU)E[QInJFPF#1E.Q"><field name="TEXT"></field></shadow></value><next><block type="variables_set" id="}*%]DEqSWhXOU7b)pi~~"><field name="VAR" id="o1]F}%-Jd)z!@c}D8+6,">mySprite</field><value name="VALUE"><shadow type="math_number" id="pe-:;-~a?W;u_?K+xK*9"><field name="NUM">0</field></shadow><block type="spritescreate" id="P}-q5ol1TaS:Cp/afRE@"><value name="img"><shadow type="screen_image_picker" id="C}Jc-?(Z*]99{9HS;y!N"><field name="img">assets.image`kitty`</field><data>{"commentRefs":[],"fieldData":{"img":"myImages.~"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="?JKRuh[[7zTgbs,0$Y/Y"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="-Sa`SWI5@03%^#Bt62qx"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="#O{:{|EpaSFHx)U]Dm~;"><field name="VAR" id="o1]F}%-Jd)z!@c}D8+6,">mySprite</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="C5{}zF0W?eg|7l1bWa1o"><field name="speed">100</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="/6ioM#5s5v5DxVAvO9-t"><field name="speed">100</field></shadow></value><next><block type="camerafollow" id="VM)l,M*-sF:Ui%mO-Y|X"><value name="sprite"><block type="variables_get" id="|wZ)35)8g|)=YaP^LUJH"><field name="VAR" id="o1]F}%-Jd)z!@c}D8+6,">mySprite</field></block></value><next><block type="variables_set" id=",~nV#`lQnuk*OD1e_in2"><field name="VAR" id="uvK-x{VQZZh0tv@jUH{[">Scene</field><value name="VALUE"><shadow type="math_number" id="@K$]sDRF}uw6AkXRmHXv"><field name="NUM">0</field></shadow></value><next><block type="function_call" id="^5CC8.3(n2iP($FP,`^0"><mutation name="SetupScene" functionid="])#pJ;/|MB2on.Z2auie"></mutation></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="spriteshittile" id="8~%kh}MkHitS`1OP(09Y" x="1150" y="590"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="y@BGf4Tyh]j156nz~D5!"><mutation typename="Sprite"></mutation><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="7`RR;y9BngYJF`-H27`Z"><field name="MEMBER">Player</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker" id="zR2vF,j/vIl|)A#Vc2sw"><field name="tile">sprites.dungeon.stairLadder</field></shadow></value><value name="HANDLER_DRAG_PARAM_location"><shadow type="argument_reporter_custom" id="9x_3L-@`yC9JkKIp24r!"><mutation typename="tiles.Location"></mutation><field name="VALUE">location</field></shadow></value><statement name="HANDLER"><block type="controls_if" id="taSg[e:[`nb]OS+wvd1C"><value name="IF0"><shadow type="logic_boolean" id="!?Z#tUyo,-|NXeB?;s)d"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="P2,}W.P1K??_`c-ftwcU"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="k`pG0zr%ESG^Ki~p1KP|"><field name="NUM">0</field></shadow><block type="variables_get" id=");G)NS8vAj)dL}-w+QXW"><field name="VAR" id="G;-a!~+%8({G$CL8{(NH">HasKey</field></block></value><value name="B"><shadow type="math_number" id="1SWurqEK(C1w:t3o.YyF"><field name="NUM">0</field></shadow><block type="logic_boolean" id="dQxFW;3k|Kk~q~k,a.l:"><field name="BOOL">TRUE</field></block></value></block></value><statement name="DO0"><block type="variables_change" id="!%i*`6)dlVKXq;%P)-Fn"><field name="VAR" id="uvK-x{VQZZh0tv@jUH{[">Scene</field><value name="VALUE"><shadow type="math_number" id="@+~+feFjRTyQtyKS0#lu"><field name="NUM">1</field></shadow></value><next><block type="function_call" id="rmM09RKKD8N+]=qe}uvX"><mutation name="SetupScene" functionid="])#pJ;/|MB2on.Z2auie"></mutation></block></next></block></statement></block></statement></block><block type="spriteshittile" id="Df2DI76o[!|upAx}vxTT" x="289" y="786"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="rVx1NA)#Xq6!m}vk~~!d"><mutation typename="Sprite"></mutation><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="m_uFiFH0Q3:HX~_@SUa/"><field name="MEMBER">Player</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker" id="=x;^ktG=]G8tqy]LwugU"><field name="tile">sprites.dungeon.chestClosed</field></shadow></value><value name="HANDLER_DRAG_PARAM_location"><shadow type="argument_reporter_custom" id="l9jI4}rf9!Sh,z0@PkO)"><mutation typename="tiles.Location"></mutation><field name="VALUE">location</field></shadow></value><statement name="HANDLER"><block type="variables_set" id="D9n!16WA/Anz`;+f]6fA"><field name="VAR" id="G;-a!~+%8({G$CL8{(NH">HasKey</field><value name="VALUE"><shadow type="math_number" id="+LQ|rOV`KlX)2r}wL[Vc"><field name="NUM">0</field></shadow><block type="logic_boolean" id="TQ@^YMC~=W.V4Ar0Ec{n"><field name="BOOL">TRUE</field></block></value></block></statement></block><block type="spriteshittile" id="naAao|4N4z/xQFVD#;St" x="-170" y="1010"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="/W|q$]J@ZX[94os@vecj"><mutation typename="Sprite"></mutation><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="(uw?c2)V?/m2;4NXT5O!"><field name="MEMBER">Player</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker" id="=zTc`P_@A_m-eW:^PwW|"><field name="tile">assets.tile`Teleport 1`</field></shadow></value><value name="HANDLER_DRAG_PARAM_location"><shadow type="argument_reporter_custom" id="jeH]~`iCphYOl2C):2iw"><mutation typename="tiles.Location"></mutation><field name="VALUE">location</field></shadow></value><statement name="HANDLER"><block type="controls_if" id="^)yoe3OqL=2ZqBQ:[XJ*"><value name="IF0"><shadow type="logic_boolean" id="32h`P9Y({L1{H.fa]iUV"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="!*|7.;H00O+;LdSoWL@U"><field name="OP">AND</field><value name="A"><block type="logic_compare" id="XkSkGHGU.P50Vcnu@@7i"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="3**(R},6V,`1-J6I=so8"><field name="NUM">0</field></shadow><block type="variables_get" id="f4s0h*S=33+B7.9tQovR"><field name="VAR" id="!(t8_KcnXXGs/4-C(Ue6">justtelepored</field></block></value><value name="B"><shadow type="math_number" id="UN^y3yw.ISu4+|BzJ:E`"><field name="NUM">0</field></shadow><block type="logic_boolean" id="_UX_SQp|vmM:JQ[?L-;`"><field name="BOOL">FALSE</field></block></value></block></value><value name="B"><block type="logic_compare" id="zHf?r7PGv)R(.CT?Af62"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="*P6oc4b7{S!$M*!zb_?2" disabled="true"><field name="NUM">0</field></shadow><block type="variables_get" id="yA^.ncK:$(%S%MI/T|CL"><field name="VAR" id="uvK-x{VQZZh0tv@jUH{[">Scene</field></block></value><value name="B"><shadow type="math_number" id=":AG8:E1?eE1/Wqug[}9a"><field name="NUM">1</field></shadow></value></block></value></block></value><statement name="DO0"><block type="variables_set" id="N%#C+LNy5UuVbaH:Mzx7"><field name="VAR" id="!(t8_KcnXXGs/4-C(Ue6">justtelepored</field><value name="VALUE"><shadow type="math_number" id="T{Z1sflWN@5Ng4N?f8Om"><field name="NUM">0</field></shadow><block type="logic_boolean" id="^/sAU~{1gUKv_rlu~23:"><field name="BOOL">TRUE</field></block></value><next><block type="spritesetpos" id="-DQrn:PV[hyBU6|L@#+E"><value name="sprite"><block type="variables_get" id="j3/6-bU0s@O}D;O~i3%7"><field name="VAR" id="o1]F}%-Jd)z!@c}D8+6,">mySprite</field></block></value><value name="x"><shadow type="positionPicker" id="F+3)fBkSf,6$fpdGqE.C"><field name="index">218</field></shadow></value><value name="y"><shadow type="positionPicker" id="I-I!UBEyEwN]Ri~cH/)6"><field name="index">188</field></shadow></value></block></next></block></statement><next><block type="controls_if" id="r:hotO1IiL)n?^$reG[U"><value name="IF0"><shadow type="logic_boolean" id=",]y87oWx_Oy:p@C,sr(Z"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="^#U!93iB}*Rjdj30FgwM"><field name="OP">AND</field><value name="A"><block type="logic_compare" id="z%e*baH8,r,o(W(5AYPT"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id=")w=q[7xUET$vl_Vn^X$L"><field name="VAR" id="!(t8_KcnXXGs/4-C(Ue6">justtelepored</field></block></value><value name="B"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_boolean" id="mc3C}n*LN}e:B?#QX@Rn"><field name="BOOL">FALSE</field></block></value></block></value><value name="B"><block type="logic_compare" id="z1t1(+*0rI!?bd-k8TjI"><field name="OP">EQ</field><value name="A"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="variables_get" id=",Q}XB,KCE,ZH|7xoBB#r"><field name="VAR" id="uvK-x{VQZZh0tv@jUH{[">Scene</field></block></value><value name="B"><shadow type="math_number" id="^zpRC6Rvn.:v}`@p_@gg"><field name="NUM">2</field></shadow></value></block></value></block></value><statement name="DO0"><block type="variables_set" id="H@/Ql7#`oovSs_i8uBg]"><field name="VAR" id="!(t8_KcnXXGs/4-C(Ue6">justtelepored</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_boolean" id="0?@kCa=),vP*a:[!X_IB"><field name="BOOL">TRUE</field></block></value><next><block type="spritesetpos" id="P!+Z6]J5t}3-vqTHj;@9"><value name="sprite"><block type="variables_get" id="?8tu@]:EIs{-+z]V].nG"><field name="VAR" id="o1]F}%-Jd)z!@c}D8+6,">mySprite</field></block></value><value name="x"><shadow type="positionPicker" id="Q!!v_XaZlk6RwCiV+0Rx"><field name="index">248</field></shadow></value><value name="y"><shadow type="positionPicker" id="/Rc.$yXRv^lR`3~w^-4Z"><field name="index">200</field></shadow></value></block></next></block></statement></block></next></block></statement></block><block type="spriteshittile" id="|Qff[NbP$H.9D2poDSuk" x="1130" y="1070"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="{qY#~sl~]hGqfYg5=2Z?"><mutation typename="Sprite"></mutation><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="MSz{(]yW?XydIyoz;fE!"><field name="MEMBER">Player</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker" id="@GowqGPEd1ji|h3W,O2_"><field name="tile">assets.tile`Teleport 2`</field></shadow></value><value name="HANDLER_DRAG_PARAM_location"><shadow type="argument_reporter_custom" id="Re-TFh25Mp+}mf.682WF"><mutation typename="tiles.Location"></mutation><field name="VALUE">location</field></shadow></value><statement name="HANDLER"><block type="controls_if" id="Iw%*,O/dFKEfLvLNJ=5x"><value name="IF0"><shadow type="logic_boolean" id=":JNfm5R60)7U0i3*dwG/"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="IY`~4;!P#ow*6vCbEB2j"><field name="OP">AND</field><value name="A"><block type="logic_compare" id="*V;FPj(:jbQ:^A)uYszA"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="vdeIlc;i*Gxyyk5M`tnn"><field name="VAR" id="!(t8_KcnXXGs/4-C(Ue6">justtelepored</field></block></value><value name="B"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_boolean" id="mL%6i[`NpesHE2d!(QD|"><field name="BOOL">FALSE</field></block></value></block></value><value name="B"><block type="logic_compare" id=".Mgy[hW|Li}(JI2wbT3j"><field name="OP">EQ</field><value name="A"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="variables_get" id=");*@Ya}OJ4.dI;qwp~B="><field name="VAR" id="uvK-x{VQZZh0tv@jUH{[">Scene</field></block></value><value name="B"><shadow type="math_number" id="I%xwK/8-5PmgUKGqRB`X"><field name="NUM">1</field></shadow></value></block></value></block></value><statement name="DO0"><block type="variables_set" id="9E]f7aPPp2yqyJ^j2/WO"><field name="VAR" id="!(t8_KcnXXGs/4-C(Ue6">justtelepored</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_boolean" id="#x~?e6.9M)#5]vTJ)E18"><field name="BOOL">TRUE</field></block></value><next><block type="spritesetpos" id="s.vggRrA^1}nbg^H9r?}"><value name="sprite"><block type="variables_get" id="udn]|-/)0z]).)uzZT0s"><field name="VAR" id="o1]F}%-Jd)z!@c}D8+6,">mySprite</field></block></value><value name="x"><shadow type="positionPicker" id="].H3E|_ya/16N`VMnXe~"><field name="index">58</field></shadow></value><value name="y"><shadow type="positionPicker" id="q3}(vudhNJpeV@~R`;n3"><field name="index">108</field></shadow></value></block></next></block></statement><next><block type="controls_if" id="q1n07=NU2GtQjiQd5`2O"><value name="IF0"><shadow type="logic_boolean" id=")3YYy9H5U]70Ew6hB-),"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="EH[_+1(ba8h-Lb-!Yc$W"><field name="OP">AND</field><value name="A"><block type="logic_compare" id="XSLq|@YaN61O@h{QqpZt"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="mpeg{+53X!WjxfBGn(XQ"><field name="VAR" id="!(t8_KcnXXGs/4-C(Ue6">justtelepored</field></block></value><value name="B"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_boolean" id="7.%NxBK!.q!Hra?Mw97;"><field name="BOOL">FALSE</field></block></value></block></value><value name="B"><block type="logic_compare" id="Noz#!Ji7$lbqZZh[XCmW"><field name="OP">EQ</field><value name="A"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="variables_get" id="MUvWbLR?FPpaNm#n*mGd"><field name="VAR" id="uvK-x{VQZZh0tv@jUH{[">Scene</field></block></value><value name="B"><shadow type="math_number" id="ZBpnQHsZvzy}c#7YFU=+"><field name="NUM">2</field></shadow></value></block></value></block></value><statement name="DO0"><block type="variables_set" id="d{Hb.er^2Zce.7CR!,}S"><field name="VAR" id="!(t8_KcnXXGs/4-C(Ue6">justtelepored</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_boolean" id="6PrY^?*;{j}td]P:#kq#"><field name="BOOL">TRUE</field></block></value><next><block type="spritesetpos" id="m4peCdK#92*;L#0Sr+GM"><value name="sprite"><block type="variables_get" id="r-BKkShHDKfj+c:ofF#m"><field name="VAR" id="o1]F}%-Jd)z!@c}D8+6,">mySprite</field></block></value><value name="x"><shadow type="positionPicker" id="sN}d8D{KZ3=lNH}A.bhg"><field name="index">56</field></shadow></value><value name="y"><shadow type="positionPicker" id="]6Rkyg?tF|F5,~rC?6SN"><field name="index">56</field></shadow></value></block></next></block></statement></block></next></block></statement></block><block type="spritesoverlap" id="b8Th1C/Ut]q}geV]zf6Q" x="390" y="1730"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="I;rm:tg?=che|Q{-1;Yn"><mutation typename="Sprite"></mutation><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="JX}^vE.|F[T@{|n8`gPA"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom" id="Qn3d/~CAU6$!(kZ3?^I`"><mutation typename="Sprite"></mutation><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind" id="7i{6WxKE5!R*Lpv*:Jqj"><field name="MEMBER">ResetTile</field></shadow></value><statement name="HANDLER"><block type="variables_set" id="3:p]WEtt6pN@iLYi4U%)"><field name="VAR" id="!(t8_KcnXXGs/4-C(Ue6">justtelepored</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_boolean" id="uS{.Qe`c0]fcr=+TuL-N"><field name="BOOL">FALSE</field></block></value></block></statement></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable type="KIND_SpriteKind" id="#pB*i[@VEK%wUWADaZkv">Player</variable>
+    <variable type="KIND_SpriteKind" id="Zguem1H53Xj{I3pA~`hq">Projectile</variable>
+    <variable type="KIND_SpriteKind" id="H)Tg=:pU@ssij~639r:h">Food</variable>
+    <variable type="KIND_SpriteKind" id="8^NQY@8X_26cciA3.,|]">Enemy</variable>
+    <variable type="KIND_SpriteKind" id="-*IQA8i4?zo.JP9Sl?f(">ResetTile</variable>
+    <variable id="o1]F}%-Jd)z!@c}D8+6,">mySprite</variable>
+    <variable id="5$4B8pD?B-CR6++yOM``">mySprite2</variable>
+    <variable id="?Pg7T_RLt4#7v.-.I(EL">collectible</variable>
+    <variable id="E2-fxrgPiZcIUARpX#Dw">otherSprite</variable>
+    <variable id="G;-a!~+%8({G$CL8{(NH">HasKey</variable>
+    <variable id="5(.CM;Md:=LF4PEO1.#_">location</variable>
+    <variable id="!(t8_KcnXXGs/4-C(Ue6">justtelepored</variable>
+    <variable id="/Ce2G(d?.F[B7BwSJ+6F">ResetTile1</variable>
+    <variable id="uvK-x{VQZZh0tv@jUH{[">Scene</variable>
+    <variable id="-fMAi]GBpfa/tU|UpWzH">ResetTile2</variable>
+    <variable id="SVmC!)+,OycwU]CZ,W#_">ResetTile3</variable>
+    <variable id="%Ldd=rX~p=BZz)OZk?AJ">ResetTile4</variable>
+    <variable id="~a:9H7XX}%mRF.M(?2u]">ResetTile5</variable>
+    <variable id="O1lZ2ollzt4`|66L!wu]">ResetTile6</variable>
+  </variables>
+  <block type="function_definition" id="iDs8N{=[*,5S7$dsEvFa" x="1169" y="-1534">
+    <mutation name="SetupScene" functionid="])#pJ;/|MB2on.Z2auie"></mutation>
+    <field name="function_name">SetupScene</field>
+    <statement name="STACK">
+      <block type="controls_if" id="LYB)+-yc|{z7.h/nZ)W^">
+        <mutation elseif="3" else="1"></mutation>
+        <value name="IF0">
+          <shadow type="logic_boolean" id="wBRliJm5A|k+bl+i1~*%">
+            <field name="BOOL">TRUE</field>
+          </shadow>
+          <block type="logic_compare" id="=aY._0.FIwn4{n3PU.Bu">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <shadow type="math_number" id="l4X-p,9gFs^]rrp@X3y8">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="variables_get" id=":a~Q0IK+!@ms|L@w,Z]f">
+                <field name="VAR" id="uvK-x{VQZZh0tv@jUH{[">Scene</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="QaN7)9YGc4RYUE{hgs_M">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="variables_set" id="QTwD,[x8.QPJj%T1Hq;`">
+            <field name="VAR" id="G;-a!~+%8({G$CL8{(NH">HasKey</field>
+            <value name="VALUE">
+              <shadow type="math_number" id="YvSTR#nx|uYwIH!2BK2c">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="logic_boolean" id="^eD[OPpvK;.2mS5:`V2i">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="set_current_tilemap" id="D`e-4ldFs+;WvlZ32OOY">
+                <value name="tilemap">
+                  <shadow type="tiles_tilemap_editor" id="5lY3]+9te7,pzjkT%8AH">
+                    <field name="tilemap">tilemap`level4`</field>
+                    <data>{"commentRefs":[],"fieldData":{"tilemap":"level4"}}</data>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="spritesetpos" id="nb+lZq4+A9q^%-z0Ciz5">
+                    <value name="sprite">
+                      <block type="variables_get" id="4W$B~d|0JI]qrl%e5yH/">
+                        <field name="VAR" id="o1]F}%-Jd)z!@c}D8+6,">mySprite</field>
+                      </block>
+                    </value>
+                    <value name="x">
+                      <shadow type="positionPicker" id="5:?Qp,J0^TAsdVq)_Vl,">
+                        <field name="index">144</field>
+                      </shadow>
+                    </value>
+                    <value name="y">
+                      <shadow type="positionPicker" id="~fu{t]-tZim;h7RZ/N%M">
+                        <field name="index">16</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_compare" id="qCL+!BoBJ3z8JWn~iJ#5">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <shadow type="math_number">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="variables_get" id="[aW?YAHRMU%$oQ+EzT?I">
+                <field name="VAR" id="uvK-x{VQZZh0tv@jUH{[">Scene</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="svFj5mhQ9|pXOeitN$l4">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="set_current_tilemap" id="x/uJ.)WFISV|}30th*V0">
+            <value name="tilemap">
+              <shadow type="tiles_tilemap_editor" id="V2pV2p~U7DoP9J7DpJS$">
+                <field name="tilemap">tilemap`level`</field>
+                <data>{"commentRefs":[],"fieldData":{"tilemap":"level1"}}</data>
+              </shadow>
+            </value>
+            <next>
+              <block type="variables_set" id="f~dM$QM;EimdNAjEZN#x">
+                <field name="VAR" id="G;-a!~+%8({G$CL8{(NH">HasKey</field>
+                <value name="VALUE">
+                  <shadow type="math_number">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="logic_boolean" id="eLh/P?l)Wa0h[0x3.L5f">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="bQ`$o5jj;A0Pv%c-8IYw">
+                    <field name="VAR" id="/Ce2G(d?.F[B7BwSJ+6F">ResetTile1</field>
+                    <value name="VALUE">
+                      <shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number">
+                        <field name="NUM">0</field>
+                      </shadow>
+                      <block type="spritescreate" id="jaUP=*p?;LvNF6Tcs;t#">
+                        <value name="img">
+                          <shadow type="screen_image_picker" id="$wP6?A;8:$]hbOv![(6o">
+                            <field name="img">assets.image`ResetTile`</field>
+                            <data>{"commentRefs":[],"fieldData":{"img":"myImages.image3"}}</data>
+                          </shadow>
+                        </value>
+                        <value name="kind">
+                          <shadow type="spritekind" id="6C]n,9NT1L-[TYD7Fuh$">
+                            <field name="MEMBER">ResetTile</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="spritesetpos" id="Vm#(GMl#rE]GibRPL63!">
+                        <value name="sprite">
+                          <block type="variables_get" id="4}yqcULQAPY?N5I7)we%">
+                            <field name="VAR" id="/Ce2G(d?.F[B7BwSJ+6F">ResetTile1</field>
+                          </block>
+                        </value>
+                        <value name="x">
+                          <shadow type="positionPicker" id="%H]ELd,??[1;=YX5f.wd">
+                            <field name="index">88</field>
+                          </shadow>
+                        </value>
+                        <value name="y">
+                          <shadow type="positionPicker" id="i7j!g=u[-djct]{sH,w(">
+                            <field name="index">88</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="variables_set" id="^=|E@==S{1-r?`a8Q3J]">
+                            <field name="VAR" id="-fMAi]GBpfa/tU|UpWzH">ResetTile2</field>
+                            <value name="VALUE">
+                              <shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number">
+                                <field name="NUM">0</field>
+                              </shadow>
+                              <block type="spritescreate" id="$/*[2(UEc?L3Pmzjk4({">
+                                <value name="img">
+                                  <shadow type="screen_image_picker" id="j$ej_/gOXiy;pZ]n2%QO">
+                                    <field name="img">assets.image`ResetTile`</field>
+                                    <data>{"commentRefs":[],"fieldData":{"img":"myImages.image3"}}</data>
+                                  </shadow>
+                                </value>
+                                <value name="kind">
+                                  <shadow type="spritekind" id="[{S5MCguC$^O=+6Q3uLg">
+                                    <field name="MEMBER">ResetTile</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="spritesetpos" id="OwE=GO#J=h%p:Vix84ZU">
+                                <value name="sprite">
+                                  <block type="variables_get" id="ciiz^ISiN^F!a_;AB*[/">
+                                    <field name="VAR" id="-fMAi]GBpfa/tU|UpWzH">ResetTile2</field>
+                                  </block>
+                                </value>
+                                <value name="x">
+                                  <shadow type="positionPicker" id="+]6%HF`P=Ks8QYDf1Dt3">
+                                    <field name="index">104</field>
+                                  </shadow>
+                                </value>
+                                <value name="y">
+                                  <shadow type="positionPicker" id="rhzT$6vag5S)_*(?;vG$">
+                                    <field name="index">88</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="variables_set" id="z_?ZO(O2AEc!@@)9dV=w">
+                                    <field name="VAR" id="SVmC!)+,OycwU]CZ,W#_">ResetTile3</field>
+                                    <value name="VALUE">
+                                      <shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number">
+                                        <field name="NUM">0</field>
+                                      </shadow>
+                                      <block type="spritescreate" id="UR51Q18E:l}`-?r!gT8/">
+                                        <value name="img">
+                                          <shadow type="screen_image_picker" id="$:Oq^SK,/#PFtV1,U#~U">
+                                            <field name="img">assets.image`ResetTile`</field>
+                                            <data>{"commentRefs":[],"fieldData":{"img":"myImages.image3"}}</data>
+                                          </shadow>
+                                        </value>
+                                        <value name="kind">
+                                          <shadow type="spritekind" id="3?:=z4qXISbFJa_Pw0cU">
+                                            <field name="MEMBER">ResetTile</field>
+                                          </shadow>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="spritesetpos" id="^-Lg._EAJR:jtE,nxsFL">
+                                        <value name="sprite">
+                                          <block type="variables_get" id="+^rGqS.c,3VI^1N@RaLd">
+                                            <field name="VAR" id="SVmC!)+,OycwU]CZ,W#_">ResetTile3</field>
+                                          </block>
+                                        </value>
+                                        <value name="x">
+                                          <shadow type="positionPicker" id="Lo:^aeBJug}?/]?u^a6w">
+                                            <field name="index">232</field>
+                                          </shadow>
+                                        </value>
+                                        <value name="y">
+                                          <shadow type="positionPicker" id="@]ZZ|%KcPrVa(2aIx(jv">
+                                            <field name="index">200</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="variables_set" id="Z*fotqq^LI+/*}w]l=Z;">
+                                            <field name="VAR" id="%Ldd=rX~p=BZz)OZk?AJ">ResetTile4</field>
+                                            <value name="VALUE">
+                                              <shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number">
+                                                <field name="NUM">0</field>
+                                              </shadow>
+                                              <block type="spritescreate" id="ITXc_2c!IEj;%i*JFXPz">
+                                                <value name="img">
+                                                  <shadow type="screen_image_picker" id="Tb#tylPnYL{V^`Wu);LI">
+                                                    <field name="img">assets.image`ResetTile`</field>
+                                                    <data>{"commentRefs":[],"fieldData":{"img":"myImages.image3"}}</data>
+                                                  </shadow>
+                                                </value>
+                                                <value name="kind">
+                                                  <shadow type="spritekind" id="E91gKd^JASiAmYSJ88J+">
+                                                    <field name="MEMBER">ResetTile</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="spritesetpos" id="YoBB?|x];mZ6ZyE},H}G">
+                                                <value name="sprite">
+                                                  <block type="variables_get" id="y5pbyXs(NEVrCU%LmPsp">
+                                                    <field name="VAR" id="%Ldd=rX~p=BZz)OZk?AJ">ResetTile4</field>
+                                                  </block>
+                                                </value>
+                                                <value name="x">
+                                                  <shadow type="positionPicker" id=");6Ep=rv{G/lq3`.N:e9">
+                                                    <field name="index">248</field>
+                                                  </shadow>
+                                                </value>
+                                                <value name="y">
+                                                  <shadow type="positionPicker" id=":LTJszz$W[hwBc4;PV6m">
+                                                    <field name="index">200</field>
+                                                  </shadow>
+                                                </value>
+                                                <next>
+                                                  <block type="variables_set" id=".Cl~X*r#6i1*!![~VPN!">
+                                                    <field name="VAR" id="~a:9H7XX}%mRF.M(?2u]">ResetTile5</field>
+                                                    <value name="VALUE">
+                                                      <shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number">
+                                                        <field name="NUM">0</field>
+                                                      </shadow>
+                                                      <block type="spritescreate" id="?EoVpfx.rj1F1(F$j4)k">
+                                                        <value name="img">
+                                                          <shadow type="screen_image_picker" id="K8i,lN+}x~x8.Xo{]w:,">
+                                                            <field name="img">assets.image`ResetTile`</field>
+                                                            <data>{"commentRefs":[],"fieldData":{"img":"myImages.image3"}}</data>
+                                                          </shadow>
+                                                        </value>
+                                                        <value name="kind">
+                                                          <shadow type="spritekind" id="H29G~^5*/]zowO?D`~wq">
+                                                            <field name="MEMBER">ResetTile</field>
+                                                          </shadow>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="spritesetpos" id="a:ZYK-YN%eLji@R^$.?h">
+                                                        <value name="sprite">
+                                                          <block type="variables_get" id="h-%!O1Nw8M~],h?7e~+c">
+                                                            <field name="VAR" id="~a:9H7XX}%mRF.M(?2u]">ResetTile5
+                                                            </field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="x">
+                                                          <shadow type="positionPicker" id="hqQ_[WcUWw!aZee(PV-?">
+                                                            <field name="index">232</field>
+                                                          </shadow>
+                                                        </value>
+                                                        <value name="y">
+                                                          <shadow type="positionPicker" id="~X)}@EjzQQ)}qX!4`N^I">
+                                                            <field name="index">136</field>
+                                                          </shadow>
+                                                        </value>
+                                                        <next>
+                                                          <block type="variables_set" id=")|IE+,L%5)(9Hs6)w}_P">
+                                                            <field name="VAR" id="O1lZ2ollzt4`|66L!wu]">ResetTile6
+                                                            </field>
+                                                            <value name="VALUE">
+                                                              <shadow xmlns="http://www.w3.org/1999/xhtml"
+                                                                type="math_number">
+                                                                <field name="NUM">0</field>
+                                                              </shadow>
+                                                              <block type="spritescreate" id="RfzugQM01Ro^(9*k^$j(">
+                                                                <value name="img">
+                                                                  <shadow type="screen_image_picker"
+                                                                    id="uSV$c~j^fz)K1z;3ZYn~">
+                                                                    <field name="img">assets.image`ResetTile`</field>
+                                                                    <data>{"commentRefs":[],"fieldData":{"img":"myImages.image3"}}</data>
+                                                                  </shadow>
+                                                                </value>
+                                                                <value name="kind">
+                                                                  <shadow type="spritekind" id="QeDo2IB2j44[G8y4-;6N">
+                                                                    <field name="MEMBER">ResetTile</field>
+                                                                  </shadow>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="spritesetpos" id="~-s6cdqAGtu?e9;j[]+@">
+                                                                <value name="sprite">
+                                                                  <block type="variables_get" id="!).iyPANDxp^Z3h[z1||">
+                                                                    <field name="VAR" id="O1lZ2ollzt4`|66L!wu]">
+                                                                      ResetTile6</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="x">
+                                                                  <shadow type="positionPicker"
+                                                                    id="N(rFe%wCbys-9l*pk}]1">
+                                                                    <field name="index">248</field>
+                                                                  </shadow>
+                                                                </value>
+                                                                <value name="y">
+                                                                  <shadow type="positionPicker"
+                                                                    id="#IWRipsv`ROf}m%(8ywF">
+                                                                    <field name="index">136</field>
+                                                                  </shadow>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="spritesetpos" id="-,pph^q`:Wb2iU[/*VDY">
+                                                                    <value name="sprite">
+                                                                      <block type="variables_get"
+                                                                        id="FN):z3f-bCMnxTX}S5w9">
+                                                                        <field name="VAR" id="o1]F}%-Jd)z!@c}D8+6,">
+                                                                          mySprite</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="x">
+                                                                      <shadow type="positionPicker"
+                                                                        id="?d#Oy!fe^x({zhU~UPMF">
+                                                                        <field name="index">19</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                    <value name="y">
+                                                                      <shadow type="positionPicker"
+                                                                        id="msyn}:XPR#I9~A;gO!0B">
+                                                                        <field name="index">18</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="IF2">
+          <block type="logic_compare" id="^=[!Y_.V1=I)H#$BJ|tc">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <shadow type="math_number" id="BS#elk0!X60{Pz2~awc,">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="variables_get" id="kx^T}Ap,4tA-FgMB*DmU">
+                <field name="VAR" id="uvK-x{VQZZh0tv@jUH{[">Scene</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id=";F=at/p+ON[uxP#a1,uI">
+                <field name="NUM">2</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <statement name="DO2">
+          <block type="variables_set" id="(H!N-#M,%/lSF^QF|yT9">
+            <field name="VAR" id="G;-a!~+%8({G$CL8{(NH">HasKey</field>
+            <value name="VALUE">
+              <shadow type="math_number">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="logic_boolean" id="8*^H%,/TivO0=UyMO{H}">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <next>
+              <block type="set_current_tilemap" id="rR2euaZ39sN6st4oXN#;">
+                <value name="tilemap">
+                  <shadow type="tiles_tilemap_editor" id="_dnDa%/TiF~[xZ|4Ym,J">
+                    <field name="tilemap">tilemap`level2`</field>
+                    <data>{"commentRefs":[],"fieldData":{"tilemap":"level2"}}</data>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="spritesetpos" id="`p)qA|n)%*~.Ti!H(1+q">
+                    <value name="sprite">
+                      <block type="variables_get" id="oC2Z-L$SoNOe[40nkXll">
+                        <field name="VAR" id="/Ce2G(d?.F[B7BwSJ+6F">ResetTile1</field>
+                      </block>
+                    </value>
+                    <value name="x">
+                      <shadow type="positionPicker" id="}WO:J8:7TkCOwT7V1lkQ">
+                        <field name="index">216</field>
+                      </shadow>
+                    </value>
+                    <value name="y">
+                      <shadow type="positionPicker" id="A|ulpKniJ46gRzLGG9*T">
+                        <field name="index">232</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="spritesetpos" id="]=`b^S=#hgPamQ`||88,">
+                        <value name="sprite">
+                          <block type="variables_get" id="z;KiP38!TPddbz|X;o7,">
+                            <field name="VAR" id="-fMAi]GBpfa/tU|UpWzH">ResetTile2</field>
+                          </block>
+                        </value>
+                        <value name="x">
+                          <shadow type="positionPicker" id="g%qfW)9uJ2XZ*?7khFt)">
+                            <field name="index">216</field>
+                          </shadow>
+                        </value>
+                        <value name="y">
+                          <shadow type="positionPicker" id="T~.wRdIs@E^)``iKi#3`">
+                            <field name="index">248</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="spritesetpos" id="EQk(n`$=bzz[_G6p,kDb">
+                            <value name="sprite">
+                              <block type="variables_get" id="1x`GASM}{XmYCquO4mgT">
+                                <field name="VAR" id="SVmC!)+,OycwU]CZ,W#_">ResetTile3</field>
+                              </block>
+                            </value>
+                            <value name="x">
+                              <shadow type="positionPicker" id="Ue:;@Tv@iT!xP5[q6BCa">
+                                <field name="index">88</field>
+                              </shadow>
+                            </value>
+                            <value name="y">
+                              <shadow type="positionPicker" id="hqyb_ci*Mm]vMw=P;-YH">
+                                <field name="index">8</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="spritesetpos" id="^tL/g*$;Ot9cd4Jah-@]">
+                                <value name="sprite">
+                                  <block type="variables_get" id="Fko:j5!^L1vuq`Jab{v@">
+                                    <field name="VAR" id="%Ldd=rX~p=BZz)OZk?AJ">ResetTile4</field>
+                                  </block>
+                                </value>
+                                <value name="x">
+                                  <shadow type="positionPicker" id="(]$f*Vi,e5)gA`F55.D4">
+                                    <field name="index">88</field>
+                                  </shadow>
+                                </value>
+                                <value name="y">
+                                  <shadow type="positionPicker" id="$DV?}k(pNHdgXq)^fs{p">
+                                    <field name="index">24</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="spritedestroy2" id="=A(y=Ha5FE4VmTWatD}T">
+                                    <mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true">
+                                    </mutation>
+                                    <field name="effect">effects.spray</field>
+                                    <value name="sprite">
+                                      <block type="variables_get" id="d|h0~zihyT%FokAo%qY*">
+                                        <field name="VAR" id="~a:9H7XX}%mRF.M(?2u]">ResetTile5</field>
+                                      </block>
+                                    </value>
+                                    <value name="duration">
+                                      <shadow type="timePicker" id="wYrJzp|x|7;,R_M#(kX_">
+                                        <field name="ms">500</field>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block type="spritedestroy2" id="=9fGzKv[E7#~9v;zO+*x">
+                                        <mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true">
+                                        </mutation>
+                                        <field name="effect">effects.spray</field>
+                                        <value name="sprite">
+                                          <block type="variables_get" id="wJIEl,ND(Q_@`Y,3/,MN">
+                                            <field name="VAR" id="O1lZ2ollzt4`|66L!wu]">ResetTile6</field>
+                                          </block>
+                                        </value>
+                                        <value name="duration">
+                                          <shadow type="timePicker" id="n1B;)l$:3RNPj7R~6xi~">
+                                            <field name="ms">500</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="spritesetpos" id="TTd^t;F;Gkc)|hF%hcPL">
+                                            <value name="sprite">
+                                              <block type="variables_get" id="6d=XBFPiA-:7/Hslmr_?">
+                                                <field name="VAR" id="o1]F}%-Jd)z!@c}D8+6,">mySprite</field>
+                                              </block>
+                                            </value>
+                                            <value name="x">
+                                              <shadow type="positionPicker" id="??w+1_ZL4{I#|Vpugb2o">
+                                                <field name="index">19</field>
+                                              </shadow>
+                                            </value>
+                                            <value name="y">
+                                              <shadow type="positionPicker" id="+t5D3C$@;(pZb$$.O?zn">
+                                                <field name="index">18</field>
+                                              </shadow>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="IF3">
+          <block type="logic_compare" id="jJh5^Lw$*Ww,mtLtSHPl">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <shadow type="math_number">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="variables_get" id="+oj?[iI{gT8vf4=9YpWg">
+                <field name="VAR" id="uvK-x{VQZZh0tv@jUH{[">Scene</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="IRpP;5%4jp_JT4x1ViXX">
+                <field name="NUM">3</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <statement name="DO3">
+          <block type="gameSplash" id="8xv3:q_*VO.;X}Q~@lXG">
+            <mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation>
+            <value name="title">
+              <shadow type="text" id="znnjXU`*P9NhqliCF2+0">
+                <field name="TEXT">You won</field>
+              </shadow>
+            </value>
+            <value name="subtitle">
+              <shadow type="text" id="2,v8xCKj~osN|9d6dRn9">
+                <field name="TEXT"></field>
+              </shadow>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="pxt-on-start" id="2FoU)jsr`jC4y_DBdj_S" x="0" y="0">
+    <statement name="HANDLER">
+      <block type="gameSplash" id="4qtphPp!#OOjJjU%ghql">
+        <mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation>
+        <value name="title">
+          <shadow type="text" id="wRCFSS--SYkR3{=d++#o">
+            <field name="TEXT">Your aMAZEing</field>
+          </shadow>
+        </value>
+        <value name="subtitle">
+          <shadow type="text" id="ivxmU)E[QInJFPF#1E.Q">
+            <field name="TEXT"></field>
+          </shadow>
+        </value>
+        <next>
+          <block type="variables_set" id="}*%]DEqSWhXOU7b)pi~~">
+            <field name="VAR" id="o1]F}%-Jd)z!@c}D8+6,">mySprite</field>
+            <value name="VALUE">
+              <shadow type="math_number" id="pe-:;-~a?W;u_?K+xK*9">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="spritescreate" id="P}-q5ol1TaS:Cp/afRE@">
+                <value name="img">
+                  <shadow type="screen_image_picker" id="C}Jc-?(Z*]99{9HS;y!N">
+                    <field name="img">assets.image`kitty`</field>
+                    <data>{"commentRefs":[],"fieldData":{"img":"myImages.~"}}</data>
+                  </shadow>
+                </value>
+                <value name="kind">
+                  <shadow type="spritekind" id="?JKRuh[[7zTgbs,0$Y/Y">
+                    <field name="MEMBER">Player</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="game_control_sprite" id="-Sa`SWI5@03%^#Bt62qx">
+                <mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation>
+                <value name="sprite">
+                  <block type="variables_get" id="#O{:{|EpaSFHx)U]Dm~;">
+                    <field name="VAR" id="o1]F}%-Jd)z!@c}D8+6,">mySprite</field>
+                  </block>
+                </value>
+                <value name="vx">
+                  <shadow type="spriteSpeedPicker" id="C5{}zF0W?eg|7l1bWa1o">
+                    <field name="speed">100</field>
+                  </shadow>
+                </value>
+                <value name="vy">
+                  <shadow type="spriteSpeedPicker" id="/6ioM#5s5v5DxVAvO9-t">
+                    <field name="speed">100</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="camerafollow" id="VM)l,M*-sF:Ui%mO-Y|X">
+                    <value name="sprite">
+                      <block type="variables_get" id="|wZ)35)8g|)=YaP^LUJH">
+                        <field name="VAR" id="o1]F}%-Jd)z!@c}D8+6,">mySprite</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="variables_set" id=",~nV#`lQnuk*OD1e_in2">
+                        <field name="VAR" id="uvK-x{VQZZh0tv@jUH{[">Scene</field>
+                        <value name="VALUE">
+                          <shadow type="math_number" id="@K$]sDRF}uw6AkXRmHXv">
+                            <field name="NUM">0</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="function_call" id="^5CC8.3(n2iP($FP,`^0">
+                            <mutation name="SetupScene" functionid="])#pJ;/|MB2on.Z2auie"></mutation>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="spriteshittile" id="8~%kh}MkHitS`1OP(09Y" x="1150" y="590">
+    <value name="HANDLER_DRAG_PARAM_sprite">
+      <shadow type="argument_reporter_custom" id="y@BGf4Tyh]j156nz~D5!">
+        <mutation typename="Sprite"></mutation>
+        <field name="VALUE">sprite</field>
+      </shadow>
+    </value>
+    <value name="kind">
+      <shadow type="spritekind" id="7`RR;y9BngYJF`-H27`Z">
+        <field name="MEMBER">Player</field>
+      </shadow>
+    </value>
+    <value name="tile">
+      <shadow type="tileset_tile_picker" id="zR2vF,j/vIl|)A#Vc2sw">
+        <field name="tile">sprites.dungeon.stairLadder</field>
+      </shadow>
+    </value>
+    <value name="HANDLER_DRAG_PARAM_location">
+      <shadow type="argument_reporter_custom" id="9x_3L-@`yC9JkKIp24r!">
+        <mutation typename="tiles.Location"></mutation>
+        <field name="VALUE">location</field>
+      </shadow>
+    </value>
+    <statement name="HANDLER">
+      <block type="controls_if" id="taSg[e:[`nb]OS+wvd1C">
+        <value name="IF0">
+          <shadow type="logic_boolean" id="!?Z#tUyo,-|NXeB?;s)d">
+            <field name="BOOL">TRUE</field>
+          </shadow>
+          <block type="logic_compare" id="P2,}W.P1K??_`c-ftwcU">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <shadow type="math_number" id="k`pG0zr%ESG^Ki~p1KP|">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="variables_get" id=");G)NS8vAj)dL}-w+QXW">
+                <field name="VAR" id="G;-a!~+%8({G$CL8{(NH">HasKey</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="1SWurqEK(C1w:t3o.YyF">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="logic_boolean" id="dQxFW;3k|Kk~q~k,a.l:">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="variables_change" id="!%i*`6)dlVKXq;%P)-Fn">
+            <field name="VAR" id="uvK-x{VQZZh0tv@jUH{[">Scene</field>
+            <value name="VALUE">
+              <shadow type="math_number" id="@+~+feFjRTyQtyKS0#lu">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="function_call" id="rmM09RKKD8N+]=qe}uvX">
+                <mutation name="SetupScene" functionid="])#pJ;/|MB2on.Z2auie"></mutation>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="spriteshittile" id="Df2DI76o[!|upAx}vxTT" x="289" y="786">
+    <value name="HANDLER_DRAG_PARAM_sprite">
+      <shadow type="argument_reporter_custom" id="rVx1NA)#Xq6!m}vk~~!d">
+        <mutation typename="Sprite"></mutation>
+        <field name="VALUE">sprite</field>
+      </shadow>
+    </value>
+    <value name="kind">
+      <shadow type="spritekind" id="m_uFiFH0Q3:HX~_@SUa/">
+        <field name="MEMBER">Player</field>
+      </shadow>
+    </value>
+    <value name="tile">
+      <shadow type="tileset_tile_picker" id="=x;^ktG=]G8tqy]LwugU">
+        <field name="tile">sprites.dungeon.chestClosed</field>
+      </shadow>
+    </value>
+    <value name="HANDLER_DRAG_PARAM_location">
+      <shadow type="argument_reporter_custom" id="l9jI4}rf9!Sh,z0@PkO)">
+        <mutation typename="tiles.Location"></mutation>
+        <field name="VALUE">location</field>
+      </shadow>
+    </value>
+    <statement name="HANDLER">
+      <block type="variables_set" id="D9n!16WA/Anz`;+f]6fA">
+        <field name="VAR" id="G;-a!~+%8({G$CL8{(NH">HasKey</field>
+        <value name="VALUE">
+          <shadow type="math_number" id="+LQ|rOV`KlX)2r}wL[Vc">
+            <field name="NUM">0</field>
+          </shadow>
+          <block type="logic_boolean" id="TQ@^YMC~=W.V4Ar0Ec{n">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="spriteshittile" id="naAao|4N4z/xQFVD#;St" x="-170" y="1010">
+    <value name="HANDLER_DRAG_PARAM_sprite">
+      <shadow type="argument_reporter_custom" id="/W|q$]J@ZX[94os@vecj">
+        <mutation typename="Sprite"></mutation>
+        <field name="VALUE">sprite</field>
+      </shadow>
+    </value>
+    <value name="kind">
+      <shadow type="spritekind" id="(uw?c2)V?/m2;4NXT5O!">
+        <field name="MEMBER">Player</field>
+      </shadow>
+    </value>
+    <value name="tile">
+      <shadow type="tileset_tile_picker" id="=zTc`P_@A_m-eW:^PwW|">
+        <field name="tile">assets.tile`Teleport 1`</field>
+      </shadow>
+    </value>
+    <value name="HANDLER_DRAG_PARAM_location">
+      <shadow type="argument_reporter_custom" id="jeH]~`iCphYOl2C):2iw">
+        <mutation typename="tiles.Location"></mutation>
+        <field name="VALUE">location</field>
+      </shadow>
+    </value>
+    <statement name="HANDLER">
+      <block type="controls_if" id="^)yoe3OqL=2ZqBQ:[XJ*">
+        <value name="IF0">
+          <shadow type="logic_boolean" id="32h`P9Y({L1{H.fa]iUV">
+            <field name="BOOL">TRUE</field>
+          </shadow>
+          <block type="logic_operation" id="!*|7.;H00O+;LdSoWL@U">
+            <field name="OP">AND</field>
+            <value name="A">
+              <block type="logic_compare" id="XkSkGHGU.P50Vcnu@@7i">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <shadow type="math_number" id="3**(R},6V,`1-J6I=so8">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="variables_get" id="f4s0h*S=33+B7.9tQovR">
+                    <field name="VAR" id="!(t8_KcnXXGs/4-C(Ue6">justtelepored</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="UN^y3yw.ISu4+|BzJ:E`">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="logic_boolean" id="_UX_SQp|vmM:JQ[?L-;`">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="logic_compare" id="zHf?r7PGv)R(.CT?Af62">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <shadow type="math_number" id="*P6oc4b7{S!$M*!zb_?2" disabled="true">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="variables_get" id="yA^.ncK:$(%S%MI/T|CL">
+                    <field name="VAR" id="uvK-x{VQZZh0tv@jUH{[">Scene</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id=":AG8:E1?eE1/Wqug[}9a">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="variables_set" id="N%#C+LNy5UuVbaH:Mzx7">
+            <field name="VAR" id="!(t8_KcnXXGs/4-C(Ue6">justtelepored</field>
+            <value name="VALUE">
+              <shadow type="math_number" id="T{Z1sflWN@5Ng4N?f8Om">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="logic_boolean" id="^/sAU~{1gUKv_rlu~23:">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+            <next>
+              <block type="spritesetpos" id="-DQrn:PV[hyBU6|L@#+E">
+                <value name="sprite">
+                  <block type="variables_get" id="j3/6-bU0s@O}D;O~i3%7">
+                    <field name="VAR" id="o1]F}%-Jd)z!@c}D8+6,">mySprite</field>
+                  </block>
+                </value>
+                <value name="x">
+                  <shadow type="positionPicker" id="F+3)fBkSf,6$fpdGqE.C">
+                    <field name="index">218</field>
+                  </shadow>
+                </value>
+                <value name="y">
+                  <shadow type="positionPicker" id="I-I!UBEyEwN]Ri~cH/)6">
+                    <field name="index">188</field>
+                  </shadow>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_if" id="r:hotO1IiL)n?^$reG[U">
+            <value name="IF0">
+              <shadow type="logic_boolean" id=",]y87oWx_Oy:p@C,sr(Z">
+                <field name="BOOL">TRUE</field>
+              </shadow>
+              <block type="logic_operation" id="^#U!93iB}*Rjdj30FgwM">
+                <field name="OP">AND</field>
+                <value name="A">
+                  <block type="logic_compare" id="z%e*baH8,r,o(W(5AYPT">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <shadow type="math_number">
+                        <field name="NUM">0</field>
+                      </shadow>
+                      <block type="variables_get" id=")w=q[7xUET$vl_Vn^X$L">
+                        <field name="VAR" id="!(t8_KcnXXGs/4-C(Ue6">justtelepored</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <shadow type="math_number">
+                        <field name="NUM">0</field>
+                      </shadow>
+                      <block type="logic_boolean" id="mc3C}n*LN}e:B?#QX@Rn">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_compare" id="z1t1(+*0rI!?bd-k8TjI">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <shadow type="math_number" disabled="true">
+                        <field name="NUM">0</field>
+                      </shadow>
+                      <block type="variables_get" id=",Q}XB,KCE,ZH|7xoBB#r">
+                        <field name="VAR" id="uvK-x{VQZZh0tv@jUH{[">Scene</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <shadow type="math_number" id="^zpRC6Rvn.:v}`@p_@gg">
+                        <field name="NUM">2</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="variables_set" id="H@/Ql7#`oovSs_i8uBg]">
+                <field name="VAR" id="!(t8_KcnXXGs/4-C(Ue6">justtelepored</field>
+                <value name="VALUE">
+                  <shadow type="math_number">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="logic_boolean" id="0?@kCa=),vP*a:[!X_IB">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="spritesetpos" id="P!+Z6]J5t}3-vqTHj;@9">
+                    <value name="sprite">
+                      <block type="variables_get" id="?8tu@]:EIs{-+z]V].nG">
+                        <field name="VAR" id="o1]F}%-Jd)z!@c}D8+6,">mySprite</field>
+                      </block>
+                    </value>
+                    <value name="x">
+                      <shadow type="positionPicker" id="Q!!v_XaZlk6RwCiV+0Rx">
+                        <field name="index">248</field>
+                      </shadow>
+                    </value>
+                    <value name="y">
+                      <shadow type="positionPicker" id="/Rc.$yXRv^lR`3~w^-4Z">
+                        <field name="index">200</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="spriteshittile" id="|Qff[NbP$H.9D2poDSuk" x="1130" y="1070">
+    <value name="HANDLER_DRAG_PARAM_sprite">
+      <shadow type="argument_reporter_custom" id="{qY#~sl~]hGqfYg5=2Z?">
+        <mutation typename="Sprite"></mutation>
+        <field name="VALUE">sprite</field>
+      </shadow>
+    </value>
+    <value name="kind">
+      <shadow type="spritekind" id="MSz{(]yW?XydIyoz;fE!">
+        <field name="MEMBER">Player</field>
+      </shadow>
+    </value>
+    <value name="tile">
+      <shadow type="tileset_tile_picker" id="@GowqGPEd1ji|h3W,O2_">
+        <field name="tile">assets.tile`Teleport 2`</field>
+      </shadow>
+    </value>
+    <value name="HANDLER_DRAG_PARAM_location">
+      <shadow type="argument_reporter_custom" id="Re-TFh25Mp+}mf.682WF">
+        <mutation typename="tiles.Location"></mutation>
+        <field name="VALUE">location</field>
+      </shadow>
+    </value>
+    <statement name="HANDLER">
+      <block type="controls_if" id="Iw%*,O/dFKEfLvLNJ=5x">
+        <value name="IF0">
+          <shadow type="logic_boolean" id=":JNfm5R60)7U0i3*dwG/">
+            <field name="BOOL">TRUE</field>
+          </shadow>
+          <block type="logic_operation" id="IY`~4;!P#ow*6vCbEB2j">
+            <field name="OP">AND</field>
+            <value name="A">
+              <block type="logic_compare" id="*V;FPj(:jbQ:^A)uYszA">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <shadow type="math_number">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="variables_get" id="vdeIlc;i*Gxyyk5M`tnn">
+                    <field name="VAR" id="!(t8_KcnXXGs/4-C(Ue6">justtelepored</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="logic_boolean" id="mL%6i[`NpesHE2d!(QD|">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="logic_compare" id=".Mgy[hW|Li}(JI2wbT3j">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <shadow type="math_number" disabled="true">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="variables_get" id=");*@Ya}OJ4.dI;qwp~B=">
+                    <field name="VAR" id="uvK-x{VQZZh0tv@jUH{[">Scene</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="I%xwK/8-5PmgUKGqRB`X">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="variables_set" id="9E]f7aPPp2yqyJ^j2/WO">
+            <field name="VAR" id="!(t8_KcnXXGs/4-C(Ue6">justtelepored</field>
+            <value name="VALUE">
+              <shadow type="math_number">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="logic_boolean" id="#x~?e6.9M)#5]vTJ)E18">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+            <next>
+              <block type="spritesetpos" id="s.vggRrA^1}nbg^H9r?}">
+                <value name="sprite">
+                  <block type="variables_get" id="udn]|-/)0z]).)uzZT0s">
+                    <field name="VAR" id="o1]F}%-Jd)z!@c}D8+6,">mySprite</field>
+                  </block>
+                </value>
+                <value name="x">
+                  <shadow type="positionPicker" id="].H3E|_ya/16N`VMnXe~">
+                    <field name="index">58</field>
+                  </shadow>
+                </value>
+                <value name="y">
+                  <shadow type="positionPicker" id="q3}(vudhNJpeV@~R`;n3">
+                    <field name="index">108</field>
+                  </shadow>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_if" id="q1n07=NU2GtQjiQd5`2O">
+            <value name="IF0">
+              <shadow type="logic_boolean" id=")3YYy9H5U]70Ew6hB-),">
+                <field name="BOOL">TRUE</field>
+              </shadow>
+              <block type="logic_operation" id="EH[_+1(ba8h-Lb-!Yc$W">
+                <field name="OP">AND</field>
+                <value name="A">
+                  <block type="logic_compare" id="XSLq|@YaN61O@h{QqpZt">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <shadow type="math_number">
+                        <field name="NUM">0</field>
+                      </shadow>
+                      <block type="variables_get" id="mpeg{+53X!WjxfBGn(XQ">
+                        <field name="VAR" id="!(t8_KcnXXGs/4-C(Ue6">justtelepored</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <shadow type="math_number">
+                        <field name="NUM">0</field>
+                      </shadow>
+                      <block type="logic_boolean" id="7.%NxBK!.q!Hra?Mw97;">
+                        <field name="BOOL">FALSE</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_compare" id="Noz#!Ji7$lbqZZh[XCmW">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <shadow type="math_number" disabled="true">
+                        <field name="NUM">0</field>
+                      </shadow>
+                      <block type="variables_get" id="MUvWbLR?FPpaNm#n*mGd">
+                        <field name="VAR" id="uvK-x{VQZZh0tv@jUH{[">Scene</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <shadow type="math_number" id="ZBpnQHsZvzy}c#7YFU=+">
+                        <field name="NUM">2</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="variables_set" id="d{Hb.er^2Zce.7CR!,}S">
+                <field name="VAR" id="!(t8_KcnXXGs/4-C(Ue6">justtelepored</field>
+                <value name="VALUE">
+                  <shadow type="math_number">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="logic_boolean" id="6PrY^?*;{j}td]P:#kq#">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="spritesetpos" id="m4peCdK#92*;L#0Sr+GM">
+                    <value name="sprite">
+                      <block type="variables_get" id="r-BKkShHDKfj+c:ofF#m">
+                        <field name="VAR" id="o1]F}%-Jd)z!@c}D8+6,">mySprite</field>
+                      </block>
+                    </value>
+                    <value name="x">
+                      <shadow type="positionPicker" id="sN}d8D{KZ3=lNH}A.bhg">
+                        <field name="index">56</field>
+                      </shadow>
+                    </value>
+                    <value name="y">
+                      <shadow type="positionPicker" id="]6Rkyg?tF|F5,~rC?6SN">
+                        <field name="index">56</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="spritesoverlap" id="b8Th1C/Ut]q}geV]zf6Q" x="390" y="1730">
+    <value name="HANDLER_DRAG_PARAM_sprite">
+      <shadow type="argument_reporter_custom" id="I;rm:tg?=che|Q{-1;Yn">
+        <mutation typename="Sprite"></mutation>
+        <field name="VALUE">sprite</field>
+      </shadow>
+    </value>
+    <value name="kind">
+      <shadow type="spritekind" id="JX}^vE.|F[T@{|n8`gPA">
+        <field name="MEMBER">Player</field>
+      </shadow>
+    </value>
+    <value name="HANDLER_DRAG_PARAM_otherSprite">
+      <shadow type="argument_reporter_custom" id="Qn3d/~CAU6$!(kZ3?^I`">
+        <mutation typename="Sprite"></mutation>
+        <field name="VALUE">otherSprite</field>
+      </shadow>
+    </value>
+    <value name="otherKind">
+      <shadow type="spritekind" id="7i{6WxKE5!R*Lpv*:Jqj">
+        <field name="MEMBER">ResetTile</field>
+      </shadow>
+    </value>
+    <statement name="HANDLER">
+      <block type="variables_set" id="3:p]WEtt6pN@iLYi4U%)">
+        <field name="VAR" id="!(t8_KcnXXGs/4-C(Ue6">justtelepored</field>
+        <value name="VALUE">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+          <block type="logic_boolean" id="uS{.Qe`c0]fcr=+TuL-N">
+            <field name="BOOL">FALSE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>
